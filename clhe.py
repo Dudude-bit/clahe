@@ -56,7 +56,7 @@ def get_cumulative_line(r_func):
 @jit()
 def get_trunslate_dict(cumulative_line):
     return {
-        idx: cumulative_line[idx] * max_dtype_value
+        idx: round(cumulative_line[idx] * max_dtype_value)
         for idx in range(len(cumulative_line))
     }
 
