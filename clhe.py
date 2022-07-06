@@ -89,4 +89,3 @@ for idx, frame in tqdm.tqdm(list(enumerate(frames))):
 
 with open("frames.data", "wb") as f:
     np.save(f, processed_frames)
-
